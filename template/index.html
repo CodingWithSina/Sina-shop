@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>SinaShop</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+           <a href="index.html">SinaShop</a> 
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Sign In</a>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+             <button class="sidebar-close-button" onclick="closeMenu()">&#10006;</button>
+            <ul>
+                <li>
+                    <a href="index.html">Monitor</a>
+                </li>
+                <li>
+                    <a href="index.html">Laptop</a>
+                </li>
+                <li>
+                    <a href="index.html">Keyboard</a>
+                </li>
+                <li>
+                    <a href="index.html">Mouse</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+
+                    <li>
+                     <div class="product">
+                      <img class="product-imag" src="/Images/product1.jpg" alt="Product1" />
+                      <div class="product-name">
+                          <a href="product1.html">BlackWidow GamingKeyboard</a>
+                     </div>
+                      <div class="product-brand">Razer</div>
+                      <div class="product-price">$100</div>
+                      <div class="product-rating">4.6 Stars (88 Reviews)</div>
+                    </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product2.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">G402 HyperionFury GamingMouse</a>
+                           </div>
+                            <div class="product-brand">Logitech</div>
+                            <div class="product-price">$70</div>
+                            <div class="product-rating">4.5 Stars (111 Reviews)</div>
+                          </div>
+                         
+                    </li>
+
+                    <li> 
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product3.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">Kraken X Ultralight Gaming Headset</a>
+                           </div>
+                            <div class="product-brand">Razer</div>
+                            <div class="product-price">$57</div>
+                            <div class="product-rating">4.8 Stars (77 Reviews)</div>
+                          </div>
+                         
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product4.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">iMac <br>(21.5-inch)2020 4K</a>
+                           </div>
+                            <div class="product-brand">Apple</div>
+                            <div class="product-price">$2499</div>
+                            <div class="product-rating">4.6 Stars (56 Reviews)</div>
+                          </div>
+                         
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product5.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">ROG Swift PG27UQ GamingMonitor</a>
+                           </div>
+                            <div class="product-brand">Asus</div>
+                            <div class="product-price">$2299</div>
+                            <div class="product-rating">4.5 Stars (97 Reviews)</div>
+                          </div>
+                         
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product6.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">ROG Zephyrus Duo GamingLaptop</a>
+                           </div>
+                            <div class="product-brand">Asus</div>
+                            <div class="product-price">$3699</div>
+                            <div class="product-rating">4.2 Stars (31 Reviews)</div>
+                          </div>
+                         
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product7.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">Deathadder V2Mini GamingMouse</a>
+                           </div>
+                            <div class="product-brand">Razer</div>
+                            <div class="product-price">$60</div>
+                            <div class="product-rating">4.7 Stars (61 Reviews)</div>
+                          </div>
+                         
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class="product-imag" src="/Images/product8.jpg" alt="Product2" />
+                            <div class="product-name">
+                                <a href="product2.html">Surface Book 3 SMP-00009 laptop</a>
+                           </div>
+                            <div class="product-brand">Microsoft</div>
+                            <div class="product-price">$2989</div>
+                            <div class="product-rating">4.5 Stars (28 Reviews)</div>
+                          </div>
+                         
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            All rights reserved by Sina Jafarzadeh.
+        </footer>
+    </div>
+    <script>
+        function openMenu()
+        {
+            document.querySelector(".sidebar").classList.add('open');
+        }
+        function closeMenu()
+        {
+            document.querySelector(".sidebar").classList.remove('open');
+        }
+
+        getSideBar = () => document.querySelector(".sideBar");
+        document.addEventListener("DOMContentLoaded", function (event) {
+    document.querySelector(".main").onclick = function () {
+        closeMenu();
+    };
+});
+    </script>
+</body>
+</html>
